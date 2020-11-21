@@ -1,0 +1,7 @@
+
+# 设置根日志级别
+logging:
+  level:
+    root: INFO
+# 设置某个包的日志级别【可设置多个】
+#logging.level.包路径=debug
