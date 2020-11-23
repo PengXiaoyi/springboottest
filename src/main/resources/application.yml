@@ -1,7 +1,7 @@
 
-# ÉèÖÃ¸ùÈÕÖ¾¼¶±ð
+# è®¾ç½®æ ¹æ—¥å¿—çº§åˆ«
 logging:
   level:
     root: INFO
-# ÉèÖÃÄ³¸ö°üµÄÈÕÖ¾¼¶±ð¡¾¿ÉÉèÖÃ¶à¸ö¡¿
-#logging.level.°üÂ·¾¶=debug
+# è®¾ç½®æŸä¸ªåŒ…çš„æ—¥å¿—çº§åˆ«ã€å¯è®¾ç½®å¤šä¸ªã€‘
+#logging.level.åŒ…è·¯å¾„=debug
