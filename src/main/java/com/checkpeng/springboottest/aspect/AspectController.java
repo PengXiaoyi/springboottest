@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class AspectController {
 
     @GetMapping("runFunc")
-    public void runFunc() {
+    public String runFunc() {
         System.out.println("test");
+        return "111";
     }
 }
