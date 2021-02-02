@@ -23,4 +23,23 @@ public class OrderController {
         return "ok:" + port;
     }
 
+    @GetMapping("/stock/deduct/withRedisLock")
+    public Object reduceStockWithoutRedisLock(@RequestParam("id") int id) {
+        orderService.reduceStock(id);
+        return "ok:" + port;
+    }
+
+
+    @GetMapping("/stock/deduct/withZKLock")
+    public Object reduceStockWithoutZKLock(@RequestParam("id") int id) {
+        orderService.reduceStock(id);
+        return "ok:" + port;
+    }
+
+
+    @GetMapping("/stock/deduct/withSQLLock")
+    public Object reduceStockWithSQLLock(@RequestParam("id") int id) {
+        orderService.reduceStock(id);
+        return "ok:" + port;
+    }
 }
