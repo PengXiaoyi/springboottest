@@ -1,7 +1,18 @@
-
 # 设置根日志级别
 logging:
   level:
     root: INFO
-# 设置某个包的日志级别【可设置多个】
-#logging.level.包路径=debug
+  # 设置某个包的日志级别【可设置多个】
+  #logging.level.包路径=debug
+
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/pro?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
