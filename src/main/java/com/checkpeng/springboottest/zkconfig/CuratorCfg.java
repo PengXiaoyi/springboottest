@@ -13,7 +13,7 @@ public class CuratorCfg {
     @Bean(initMethod = "start")
     public CuratorFramework curatorFramework(){
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
-        CuratorFramework client = CuratorFrameworkFactory.newClient("192.196.157.45:2181", retryPolicy);
+        CuratorFramework client = CuratorFrameworkFactory.newClient("121.196.157.45:2181", retryPolicy);
         return client;
     }
 }
